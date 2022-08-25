@@ -1,0 +1,201 @@
+Exercises 4
+
+Main Task
+1. Make a commit, and make a silly typo in the commit message.
+2. Use the --amend flag to enable you to fix the commit message.
+3. Look at the log and notice how the mistake is magically gone.
+4. Now make a commit where you make a typo in one of the files. Once again, use --amend to
+magic away your problems.
+5. Create a branch. Make a commit.
+6. Now switch back to your master branch. Make a (non-conflicting) commit there also.
+7. Now switch back to your branch.
+8. Use the rebase command in your branch. Look at the DAG in gitk, and note that you have
+the commit from the master branch, but no merge commit.
+9. Make one more commit in your branch.
+10. Return to master. Merge your branch. Notice how, thanks to the rebase, this is a fastforward merge.
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master|MERGING)
+$ cd "C:\Users\rohan.p\Desktop\practice"
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add .
+error: 'Practice-Repo/' does not have a commit checked out
+fatal: adding files failed
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit -m "wrong message"
+[master b942364] wrong message
+ 1 file changed, 2 insertions(+)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git log -n 2
+commit b9423643c10e3744a579efe83bf4a1263bceb2c3 (HEAD -> master)
+Author: Rohan-B-Patil <rohan.p@emtecinc.com>
+Date:   Tue Aug 23 17:26:59 2022 +0530
+
+    wrong message
+
+commit 00cc9afa88278a28821fbfea77cb0dca278007b1 (origin/master)
+Merge: 19d0806 e7beec8
+Author: Rohan Patil <111751932+Rohan-B-Patil@users.noreply.github.com>
+Date:   Tue Aug 23 12:07:26 2022 +0530
+
+    Merge pull request #3 from Rohan-B-Patil/branch1
+
+    commit for file4 merging and PR approved
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit --amend -m "Corrected message"
+[master a7a166a] Corrected message
+ Date: Tue Aug 23 17:26:59 2022 +0530
+ 1 file changed, 2 insertions(+)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git log -n 2
+commit a7a166a62bc6b9521563c8b57c529e0d33b768b5 (HEAD -> master)
+Author: Rohan-B-Patil <rohan.p@emtecinc.com>
+Date:   Tue Aug 23 17:26:59 2022 +0530
+
+    Corrected message
+
+commit 00cc9afa88278a28821fbfea77cb0dca278007b1 (origin/master)
+Merge: 19d0806 e7beec8
+Author: Rohan Patil <111751932+Rohan-B-Patil@users.noreply.github.com>
+Date:   Tue Aug 23 12:07:26 2022 +0530
+
+    Merge pull request #3 from Rohan-B-Patil/branch1
+
+    commit for file4 merging and PR approved
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add dejong
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit -m "commiting dejong"
+[master 294999f] commiting dejong
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+####dejong has been commited but 1 changed file wasnt, so now we will use ammend to commit brancheck in previous command without changing msg
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 /
+$ cd "C:\Users\rohan.p\Desktop\practice"
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ got log -n 2
+bash: got: command not found
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git log -n 2
+commit 294999f53d2c0e50e726802a7b847616afb4a52c (HEAD -> master)
+Author: Rohan-B-Patil <rohan.p@emtecinc.com>
+Date:   Tue Aug 23 17:32:45 2022 +0530
+
+    commiting dejong
+
+commit a7a166a62bc6b9521563c8b57c529e0d33b768b5
+Author: Rohan-B-Patil <rohan.p@emtecinc.com>
+Date:   Tue Aug 23 17:26:59 2022 +0530
+
+    Corrected message
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add brancheck
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit --amend --no-edit
+[master 0df456f] commiting dejong
+ Date: Tue Aug 23 17:32:45 2022 +0530
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git log -n 2
+commit 0df456fffac9b781d2c66312fbf271eb8d5f0f81 (HEAD -> master)
+Author: Rohan-B-Patil <rohan.p@emtecinc.com>
+Date:   Tue Aug 23 17:32:45 2022 +0530
+
+    commiting dejong
+
+commit a7a166a62bc6b9521563c8b57c529e0d33b768b5
+Author: Rohan-B-Patil <rohan.p@emtecinc.com>
+Date:   Tue Aug 23 17:26:59 2022 +0530
+
+    Corrected message
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git checkout -b test
+Switched to a new branch 'test'
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (test)
+$ git add file3
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (test)
+$ git commit -m "commiting file3 changes in branch test"
+[test 9358a79] commiting file3 changes in branch test
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (test)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add file4
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit -m "commiting file4 changes in branch master"
+[master 374aa95] commiting file4 changes in branch master
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ gitk
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git checkout test
+Switched to branch 'test'
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (test)
+$ git rebase master
+Successfully rebased and updated refs/heads/test.
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (test)
+$ gitk
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (test)
+$ git add file4
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (test)
+$ git commit -m "commiting file 4 again"
+[test f58fd9f] commiting file 4 again
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (test)
+$ gitk
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (test)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git merge test
+Updating 374aa95..f58fd9f
+Fast-forward
+ file3 | 5 ++++-
+ file4 | 3 ++-
+ 2 files changed, 6 insertions(+), 2 deletions(-)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ gitk
