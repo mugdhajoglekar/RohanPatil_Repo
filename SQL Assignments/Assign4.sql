@@ -8,7 +8,7 @@ select * from employees order by FIRST_NAME;
 
 -- Write a query to get the employee ID, names (first_name, last_name), salary in ascending order of
 -- salary.
-select EMPLOYEE_ID, FIRST_NAME, LAST_NAME, SALARY from employees order by SALARY;
+select EMPLOYEE_ID, (FIRST_NAME)+' '+(LAST_NAME) as FULL_NAME, SALARY from employees order by SALARY;
 
 -- Display first name and join date of the employees who is either IT Programmer or Sales Man.
 select FIRST_NAME, HIRE_DATE from employees where JOB_ID = 'SA_MAN' or JOB_ID = 'IT_PROG';
@@ -27,7 +27,7 @@ select * from jobs order by JOB_TITLE DESC;
 
 -- Display details of the employees where commission percentage is null and salary in the range 5000
 -- to 10000 and department is 30.
-select * from employees where COMMIsSION_PCT is null and SALARY>5000 and SALARY>10000 and DEPARTMENT_ID='30';
+select * from employees where COMMISSION_PCT = 0 and SALARY>5000 and SALARY>10000 and DEPARTMENT_ID='30';
 
 -- Display employees first_name,email who are working in “Executive” department.
 select FIRST_NAME, EMAIL from employees e full outer join departments d on e.DEPARTMENT_ID=d.DEPARTMENT_ID where DEPARTMENT_NAME='Executive';
