@@ -1,0 +1,310 @@
+Exercise 3
+For this task, you will work in a small group. Between 2 and 4 people is about right.
+Main Task
+1. First, one person in the group should create a public repository using their GitHub account.
+2. This same person should then follow the instructions from GitHub to add a remote, and
+then push their repository. Do not forget the –u flag, as suggested by GitHub!
+3. All of the other members of the group should then be added as collaborators, so they can
+commit to the repository also.
+4. Next, everyone else in the group should clone the repository from GitHub. Verify that the
+context of the repository is what is expected.
+5. One of the group members who just cloned should now make a local commit, then push it.
+Everyone should verify that when they pull, that commit is added to their local repository
+(use git log to check for it).
+6. Look at each other’s git log output. Notice how the SHA-1 is the same for a given commit
+across every copy of the repository. Why is this important?
+7. Two members of the group should now make a commit locally, and race to push it. To keep
+things simple, be sure to edit different files. What happens to the runner-up?
+8. The runner-up should now pull. As a group, look at the output of the command. Additionally, look
+at the git log, and notice that there is a merge commit. You may also wish to view the DAG in gitk.
+9. Repeat the last two steps a couple of times, to practice.
+Stretch Task
+1. Now create a situation where two group members both edit the same line in the same file and
+commit it locally. Race to push.
+2. When the runner-up does a pull, they should get a merge conflict.
+3. Look as a group at the file in conflict, and resolve it.
+4. Use the add command to stage the fix, and then use commit to make the merge commit.
+Notice how this procedure is exactly the one you got used to when resolving conflicts in branches
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git clone "git@github.com:Ajinkya066/Git-task3.git"
+Cloning into 'Git-task3'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 15 (delta 4), reused 13 (delta 3), pack-reused 0
+Receiving objects: 100% (15/15), done.
+Resolving deltas: 100% (4/4), done.
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git branch
+  b1
+  branch1
+* master
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ cd "C:\Users\rohan.p\Desktop\Git-task3"
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git branch
+* master
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ new branch button2
+bash: new: command not found
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git branch button2
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git checkout button2
+Switched to branch 'button2'
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button2)
+$ touch index2.html
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button2)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button2)
+$ git commit -m "rohan commiting creation of file index2"
+[button2 2c240c6] rohan commiting creation of file index2
+ 1 file changed, 18 insertions(+)
+ create mode 100644 index2.html
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button2)
+$ git push
+fatal: The current branch button2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin button2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button2)
+$ git push origin master
+Everything up-to-date
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button2)
+$ git branch -m button3
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button3)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button3)
+$ git commit -m "commit after renaming"
+On branch button3
+nothing to commit, working tree clean
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button3)
+$ git push origin
+fatal: The current branch button3 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin button3
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button3)
+$ git push origin button3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 644 bytes | 322.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'button3' on GitHub by visiting:
+remote:      https://github.com/Ajinkya066/Git-task3/pull/new/button3
+remote:
+To github.com:Ajinkya066/Git-task3.git
+ * [new branch]      button3 -> button3
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button3)
+$ touch home.html
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button3)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button3)
+$ git commit -m "commit for home file"
+[button3 0885653] commit for home file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 home.html
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button3)
+$ git push origin button3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 366 bytes | 183.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Ajinkya066/Git-task3.git
+   2c240c6..0885653  button3 -> button3
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button3)
+$ git log -n 3
+commit 088565332dd329ad6975c1e0fa1c629b8bd0f399 (HEAD -> button3, origin/button3)
+Author: Rohan-B-Patil <rohan.p@emtecinc.com>
+Date:   Tue Aug 23 12:34:03 2022 +0530
+
+    commit for home file
+
+commit 2c240c6449a035e86328501e9730ea9653b758fc
+Author: Rohan-B-Patil <rohan.p@emtecinc.com>
+Date:   Tue Aug 23 12:23:21 2022 +0530
+
+    rohan commiting creation of file index2
+
+commit 253605a69fc68bf00ba3ee27d4ce6aa1d322f942 (master)
+Merge: 6107320 c9dd074
+Author: Ajinkya066 <111747636+Ajinkya066@users.noreply.github.com>
+Date:   Tue Aug 23 12:16:00 2022 +0530
+
+    Merge pull request #1 from Ajinkya066/button
+
+    add button
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button3)
+$ git push origin button3
+Everything up-to-date
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button3)
+$ git pull origin master
+From github.com:Ajinkya066/Git-task3
+ * branch            master     -> FETCH_HEAD
+Updating 0885653..c9bf894
+Fast-forward
+ index.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (button3)
+$ git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 6 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git pull origin master
+From github.com:Ajinkya066/Git-task3
+ * branch            master     -> FETCH_HEAD
+Updating 253605a..c9bf894
+Fast-forward
+ home.html   |  1 +
+ index.html  |  1 +
+ index2.html | 18 ++++++++++++++++++
+ 3 files changed, 20 insertions(+)
+ create mode 100644 home.html
+ create mode 100644 index2.html
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git branch
+  button3
+* master
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git pull origin button 3
+fatal: couldn't find remote ref 3
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git pull origin button3
+From github.com:Ajinkya066/Git-task3
+ * branch            button3    -> FETCH_HEAD
+Already up to date.
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git pull origin master
+From github.com:Ajinkya066/Git-task3
+ * branch            master     -> FETCH_HEAD
+Updating c9bf894..0673997
+Fast-forward
+ index.html | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git commit -m "to check conflict"
+[master 26ab9ce] to check conflict
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git branch
+  button3
+* master
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git branch -d button3
+Deleted branch button3 (was c9bf894).
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git checkout -b conflict1
+Switched to a new branch 'conflict1'
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (conflict1)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (conflict1)
+$ git commit -m "for checking conflict"
+On branch conflict1
+nothing to commit, working tree clean
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (conflict1)
+$ git push
+fatal: The current branch conflict1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin conflict1
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (conflict1)
+$ git push --set-upstream origin conflict1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 326 bytes | 326.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'conflict1' on GitHub by visiting:
+remote:      https://github.com/Ajinkya066/Git-task3/pull/new/conflict1
+remote:
+To github.com:Ajinkya066/Git-task3.git
+ * [new branch]      conflict1 -> conflict1
+branch 'conflict1' set up to track 'origin/conflict1'.
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (conflict1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 4 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git commit -m "gwerg"
+[master 534ef71] gwerg
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/Git-task3 (master)
+$ git pull origin master
+From github.com:Ajinkya066/Git-task3
+ * branch            master     -> FETCH_HEAD
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.

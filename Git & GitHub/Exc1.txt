@@ -1,0 +1,487 @@
+Rohan.P@PUN-DE-LE09A14 MINGW64 /
+$ cd "C:\Users\rohan.p\Desktop\practice"
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ touch README.md
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   README.md
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit -m "fourth"
+[master 0dca8f9] fourth
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ mk dir src
+bash: mk: command not found
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ mkdir src
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add src
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add README
+fatal: pathspec 'README' did not match any files
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add README.md
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add text.html
+fatal: pathspec 'text.html' did not match any files
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add test.html
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit -m "fifth"
+On branch master
+nothing to commit, working tree clean
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git diff
+diff --git a/README.md b/README.md
+index e69de29..7f47a3e 100644
+--- a/README.md
++++ b/README.md
+@@ -0,0 +1 @@
++Rohan made some changes
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add README.md
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git diff
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git diff
+diff --git a/README.md b/README.md
+index 7f47a3e..e7e4aab 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,2 @@
+ Rohan made some changes
++rohan made changes again
+\ No newline at end of file
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit -m "sixth"
+[master b0021e9] sixth
+ 1 file changed, 1 insertion(+)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git checkout README.md
+Updated 1 path from the index
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add README.md
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add README.md
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git reset
+Unstaged changes after reset:
+M       README.md
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit -m "sixth"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add README.md
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit -m "sixth"
+[master 2f1b621] sixth
+ 1 file changed, 2 insertions(+)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git reset
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git log
+commit 2f1b621287cf4c63c2d1ff062276b74be13f935d (HEAD -> master)
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 12:32:52 2022 +0530
+
+    sixth
+
+commit b0021e9a7e923082204231e8fd6200669c4ea4aa
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 12:27:15 2022 +0530
+
+    sixth
+
+commit 0dca8f945f7e4d24df9bc54a1a177fc922d1cc8b
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 12:15:32 2022 +0530
+
+    fourth
+
+commit a6c25ec843496aa0375d973d8fc23528b4422eaa
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 12:08:45 2022 +0530
+
+    third
+
+commit 089b72fd0f44a2884c3010187cef9851dd23eaee
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 10:25:37 2022 +0530
+
+    seconf
+
+commit 00036d5f2a24a0b81e4a28fd3760dbb78d0b13e1
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 10:22:08 2022 +0530
+
+    first
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ touch rohan.txt
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add README.md
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        new file:   rohan.txt
+        modified:   test.html
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit -m "last commit"
+[master 3e115e0] last commit
+ 3 files changed, 9 insertions(+), 3 deletions(-)
+ create mode 100644 rohan.txt
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git lo9g
+git: 'lo9g' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git log
+commit 3e115e066c84c3ac551d36306bc3732f3c7213e3 (HEAD -> master)
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 13:19:02 2022 +0530
+
+    last commit
+
+commit 2f1b621287cf4c63c2d1ff062276b74be13f935d
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 12:32:52 2022 +0530
+
+    sixth
+
+commit b0021e9a7e923082204231e8fd6200669c4ea4aa
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 12:27:15 2022 +0530
+
+    sixth
+
+commit 0dca8f945f7e4d24df9bc54a1a177fc922d1cc8b
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 12:15:32 2022 +0530
+
+    fourth
+
+commit a6c25ec843496aa0375d973d8fc23528b4422eaa
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 12:08:45 2022 +0530
+
+    third
+
+commit 089b72fd0f44a2884c3010187cef9851dd23eaee
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 10:25:37 2022 +0530
+
+    seconf
+
+commit 00036d5f2a24a0b81e4a28fd3760dbb78d0b13e1
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 10:22:08 2022 +0530
+
+    first
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git rm test.html
+rm 'test.html'
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    test.html
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    test.html
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    README.md
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git mv rohan ozil
+fatal: bad source, source=rohan, destination=ozil
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git mv rohan.txt ozil
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    rohan.txt -> ozil
+        deleted:    test.html
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    README.md
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit -m "rename check"
+[master d9a9faa] rename check
+ 2 files changed, 11 deletions(-)
+ rename rohan.txt => ozil (100%)
+ delete mode 100644 test.html
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    README.md
+        deleted:    ozil
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dejong
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit -m "rename check os"
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    README.md
+        deleted:    ozil
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dejong
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    README.md
+        renamed:    ozil -> dejong
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git log -n 3
+commit d9a9faa97e5ba4fcefba60485811a206a58f9e18 (HEAD -> master)
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 13:32:42 2022 +0530
+
+    rename check
+
+commit 3e115e066c84c3ac551d36306bc3732f3c7213e3
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 13:19:02 2022 +0530
+
+    last commit
+
+commit 2f1b621287cf4c63c2d1ff062276b74be13f935d
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 12:32:52 2022 +0530
+
+    sixth
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git log -n 1
+commit d9a9faa97e5ba4fcefba60485811a206a58f9e18 (HEAD -> master)
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 13:32:42 2022 +0530
+
+    rename check
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ get diff ^C
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git diff d9a9faa97e5ba4fcefba60485811a206a58f9e18.^C
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git diff 3e115e066c84c3ac551d36306bc3732f3c7213e3.d9a9faa97e5ba4fcefba60485811a206a58f9e18
+fatal: ambiguous argument '3e115e066c84c3ac551d36306bc3732f3c7213e3.d9a9faa97e5ba4fcefba60485811a206a58f9e18': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git diff 3e115e066c84c3ac551d36306bc3732f3c7213e3..d9a9faa97e5ba4fcefba60485811a206a58f9e18
+diff --git a/rohan.txt b/ozil
+similarity index 100%
+rename from rohan.txt
+rename to ozil
+diff --git a/test.html b/test.html
+deleted file mode 100644
+index 5cedc81..0000000
+--- a/test.html
++++ /dev/null
+@@ -1,11 +0,0 @@
+-sadegtr
+-gfcdhfik
+-wqoihdi\
+-
+-hsdishcmr\
+-'rjvucrerio\E,VIT\
+-,rvjfs
+-dvo vmtiov/
+-.'
+-
+-done nsjkoqihj

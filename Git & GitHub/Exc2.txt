@@ -1,0 +1,317 @@
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 /
+$ cd "desktop"
+bash: cd: desktop: No such file or directory
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 /
+$ cd "C:\Users\rohan.p\Desktop\practice"
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (rohan)
+$ git status
+On branch rohan
+nothing to commit, working tree clean
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (rohan)
+$ git log -n 4
+commit b73c1cfcab898524fbb5912e87027edb8997ea59 (HEAD -> rohan)
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 13:48:36 2022 +0530
+
+    for branching
+
+commit 458d985e1f0cc87e27b0425261188f5a66b5c22c
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 13:47:53 2022 +0530
+
+    for branching
+
+commit d9a9faa97e5ba4fcefba60485811a206a58f9e18 (master)
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 13:32:42 2022 +0530
+
+    rename check
+
+commit 3e115e066c84c3ac551d36306bc3732f3c7213e3
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 13:19:02 2022 +0530
+
+    last commit
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (rohan)
+$ git checkout master
+Switched to branch 'master'
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git branch
+* master
+  rohan
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git log -n 4
+commit d9a9faa97e5ba4fcefba60485811a206a58f9e18 (HEAD -> master)
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 13:32:42 2022 +0530
+
+    rename check
+
+commit 3e115e066c84c3ac551d36306bc3732f3c7213e3
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 13:19:02 2022 +0530
+
+    last commit
+
+commit 2f1b621287cf4c63c2d1ff062276b74be13f935d
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 12:32:52 2022 +0530
+
+    sixth
+
+commit b0021e9a7e923082204231e8fd6200669c4ea4aa
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 12:27:15 2022 +0530
+
+    sixth
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git log --oneline --decorate --graph
+* d9a9faa (HEAD -> master) rename check
+* 3e115e0 last commit
+* 2f1b621 sixth
+* b0021e9 sixth
+* 0dca8f9 fourth
+* a6c25ec third
+* 089b72f seconf
+* 00036d5 first
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git merge rohan
+Updating d9a9faa..b73c1cf
+Fast-forward
+ README.md | 3 ---
+ brancheck | 1 +
+ dejong    | 3 +++
+ ozil      | 1 -
+ 4 files changed, 4 insertions(+), 4 deletions(-)
+ delete mode 100644 README.md
+ create mode 100644 brancheck
+ create mode 100644 dejong
+ delete mode 100644 ozil
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git log --oneline --decorate --graph
+* b73c1cf (HEAD -> master, rohan) for branching
+* 458d985 for branching
+* d9a9faa rename check
+* 3e115e0 last commit
+* 2f1b621 sixth
+* b0021e9 sixth
+* 0dca8f9 fourth
+* a6c25ec third
+* 089b72f seconf
+* 00036d5 first
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ gitk
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git checkout rohan
+Switched to branch 'rohan'
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (rohan)
+$ git status
+On branch rohan
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   dejong
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (rohan)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (rohan)
+$ git commit -m "to check same line conflict"
+[rohan fc48d86] to check same line conflict
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (rohan)
+$ git checkout master
+Switched to branch 'master'
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit -m "to check same line conflict in master"
+[master 8a62c26] to check same line conflict in master
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git merge rohan
+Auto-merging dejong
+CONFLICT (content): Merge conflict in dejong
+Automatic merge failed; fix conflicts and then commit the result.
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master|MERGING)
+$ git merge rohan
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master|MERGING)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master|MERGING)
+$ git commit -m "merging after conflict"
+[master 51dae7d] merging after conflict
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git merge rohan
+Already up to date.
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git log -n 4
+commit 51dae7d641715e1897a6f8742e04bc2106d1b9b9 (HEAD -> master)
+Merge: 8a62c26 fc48d86
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 14:12:05 2022 +0530
+
+    merging after conflict
+
+commit 8a62c26349f91ab2b24228fe6aaf0b1acac393f1
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 14:08:31 2022 +0530
+
+    to check same line conflict in master
+
+commit fc48d86ed1a445b94aac9e2e6cdfd13494818363 (rohan)
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 14:07:45 2022 +0530
+
+    to check same line conflict
+
+commit b73c1cfcab898524fbb5912e87027edb8997ea59
+Author: rohan3 <rohanpatil0312@gmail.com>
+Date:   Mon Aug 22 13:48:36 2022 +0530
+
+    for branching
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ gitk
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git checkout brancheck
+Updated 1 path from the index
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git checkout
+D       brancheck
+D       dejong
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git checkout ^C
+
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git checkout 51dae7d641715e1897a6f8742e04bc2106d1b9b9
+Note: switching to '51dae7d641715e1897a6f8742e04bc2106d1b9b9'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 51dae7d merging after conflict
+D       brancheck
+D       dejong
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice ((51dae7d...))
+$ git checkout brancheck
+Updated 1 path from the index
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice ((51dae7d...))
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice ((51dae7d...))
+$ git commit -m "for file deletion before merging"
+[detached HEAD 8a39cff] for file deletion before merging
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new text
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice ((8a39cff...))
+$ git checkout rohan
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  8a39cff for file deletion before merging
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 8a39cff
+
+Switched to branch 'rohan'
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (rohan)
+$ git merge master
+Updating fc48d86..51dae7d
+Fast-forward
+ dejong | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (rohan)
+$ git checkout master
+Switched to branch 'master'
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit -m "master commit after failure in first attempt"
+[master fc113df] master commit after failure in first attempt
+ 1 file changed, 2 insertions(+)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git checkout rohan
+Switched to branch 'rohan'
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (rohan)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (rohan)
+$ git commit -m "rohan commit after failure in first attempt"
+[rohan 7fa5551] rohan commit after failure in first attempt
+ 1 file changed, 1 insertion(+)
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (rohan)
+$ git checkout master
+Switched to branch 'master'
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git add .
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git commit -m "master commit after file deletion and before merge"
+[master c06a5a3] master commit after file deletion and before merge
+ 1 file changed, 3 deletions(-)
+ delete mode 100644 brancheck
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master)
+$ git merge rohan
+CONFLICT (modify/delete): brancheck deleted in HEAD and modified in rohan.  Version rohan of brancheck left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+
+Rohan.P@PUN-DE-LE09A14 MINGW64 ~/Desktop/practice (master|MERGING)
+$
