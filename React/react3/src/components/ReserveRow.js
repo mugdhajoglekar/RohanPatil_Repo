@@ -1,6 +1,6 @@
 import React from "react";
 
-const EditableRow = ({
+const ReserveRow = ({
   editFormData,
   handleEditFormChange,
   handleCancelClick,
@@ -19,11 +19,11 @@ const EditableRow = ({
       </td>
       <td>
         <input
-          type="password"
+          type="text"
           required="required"
-          placeholder="Enter password..."
-          name="password"
-          value={editFormData.password}
+          placeholder="Check-In..."
+          name="CheckIn"
+          value={editFormData.CheckIn}
           onChange={handleEditFormChange}
         ></input>
       </td>
@@ -31,9 +31,9 @@ const EditableRow = ({
         <input
           type="text"
           required="required"
-          placeholder="Enter a phone number..."
-          name="phoneNumber"
-          value={editFormData.phoneNumber}
+          placeholder="Check-Out..."
+          name="CheckOut"
+          value={editFormData.CheckOut}
           onChange={handleEditFormChange}
         ></input>
       </td>
@@ -57,4 +57,4 @@ const EditableRow = ({
   );
 };
 
-export default EditableRow;
+export default ReserveRow;

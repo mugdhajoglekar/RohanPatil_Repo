@@ -1,23 +1,23 @@
 import React, { useState, Fragment } from "react";
 import { nanoid } from "nanoid";
 import "../App.css";
-import data from "../mock-data.json";
-import ReadOnlyRow from "./ReadOnlyRow";
-import EditableRow from "./EditableRow";
+import reserve from "../userbook.json";
+import ReserveRead from "./ReserveRead"
+import ReserveRow from "./ReserveRow";
 
-const AdminTable = () => {
-  const [contacts, setContacts] = useState(data);
+const Reservation = () => {
+  const [contacts, setContacts] = useState(reserve);
   const [addFormData, setAddFormData] = useState({
     fullName: "",
-    password: "",
-    phoneNumber: "",
+    CheckIn: "",
+    CheckOut: "",
     email: "",
   });
 
   const [editFormData, setEditFormData] = useState({
     fullName: "",
-    password: "",
-    phoneNumber: "",
+    CheckIn: "",
+    CheckOut: "",
     email: "",
   });
 
@@ -41,8 +41,8 @@ const AdminTable = () => {
     const editedContact = {
       id: editContactId,
       fullName: editFormData.fullName,
-      password: editFormData.password,
-      phoneNumber: editFormData.phoneNumber,
+      CheckIn: editFormData.CheckIn,
+      CheckOut: editFormData.CheckOut,
       email: editFormData.email,
     };
 
@@ -62,8 +62,8 @@ const AdminTable = () => {
 
     const formValues = {
       fullName: contact.fullName,
-      address: contact.password,
-      phoneNumber: contact.phoneNumber,
+      CheckIn: contact.CheckIn,
+      CheckOut: contact.CheckOut,
       email: contact.email,
     };
 
@@ -99,8 +99,8 @@ const AdminTable = () => {
     const newContact = {
       id: nanoid(),
       fullName: addFormData.fullName,
-      password: addFormData.password,
-      phoneNumber: addFormData.phoneNumber,
+      CheckIn: addFormData.CheckIn,
+      CheckOut: addFormData.CheckOut,
       email: addFormData.email,
     };
     const newContacts = [...contacts, newContact];
@@ -109,14 +109,14 @@ const AdminTable = () => {
 
   return (
     <div className="app-container">
-      <h1 style={{ textAlign: 'center', margin: 10 }}>List Of Users</h1><br />
+      <h1 style={{ textAlign: 'center', margin: 10 }}>Upcoming Reservations</h1><br />
       <form onSubmit={handleEditFormSubmit}>
         <table>
           <thead>
             <tr>
               <th>Name</th>
-              <th>Password</th>
-              <th>Phone Number</th>
+              <th>Check-In</th>
+              <th>Check-Out</th>
               <th>Email</th>
               <th>Actions</th>
             </tr>
@@ -125,13 +125,13 @@ const AdminTable = () => {
             {contacts.map((contact) => (
               <Fragment>
                 {editContactId === contact.id ? (
-                  <EditableRow
+                  <ReserveRow
                     editFormData={editFormData}
                     handleEditFormChange={handleEditFormChange}
                     handleCancelClick={handleCancelClick}
                   />
                 ) : (
-                  <ReadOnlyRow
+                  <ReserveRead
                     contact={contact}
                     handleEditClick={handleEditClick}
                     handleDeleteClick={handleDeleteClick}
@@ -144,65 +144,8 @@ const AdminTable = () => {
       </form>
       <br />
       <hr />
-      {/* <div className='container'>
-      <h1 style={{ textAlign: 'center', margin: 10 }}>Add Values In Table</h1><br />
-      <div className='form'>
-        <div className='row'>
-          <div className='col'>
-            <div className='mb-3'>
-                <input
-                type="text"
-                name="fullName"
-                required="required"
-                placeholder="Enter a name..."
-                onChange={handleAddFormChange}
-                className='form-control'
-                />
-                </div></div>
-                <div className='col'>
-            <div className='mb-3'>
-                <input
-                type="text"
-                name="address"
-                required="required"
-                placeholder="Enter an addres..."
-                onChange={handleAddFormChange}
-                className='form-control'
-                />
-                </div></div></div>
-                <div className='row'>
-          <div className='col'>
-            <div className='mb-3'>
-                <input
-                type="text"
-                name="phoneNumber"
-                required="required"
-                placeholder="Enter a phone number..."
-                onChange={handleAddFormChange}
-                className='form-control'
-                />
-                </div></div>
-                <div className='col'>
-            <div className='mb-3'>
-                <input
-                type="email"
-                name="email"
-                required="required"
-                placeholder="Enter an email..."
-                onChange={handleAddFormChange}
-                className='form-control'
-                />
-                </div>
-                </div>
-                </div>
-                <br />
-                <div align='center' className='row'>
-                    <div className='col'>
-                        <button onClick={handleAddFormSubmit} className='btn btn-success'>Add</button>
-                    </div></div>
-                </div></div> */}
-            </div>
+      </div>
   );
 };
 
-export default AdminTable;
+export default Reservation;
