@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "fullName": "Jenny Chan",
+      "Check-In": "3 waterfoot road",
+      "Check-Out": "333-962-7516",
+      "email": "jenny.chan@email.com"
+    },
+    {
+      "id": 2,
+      "fullName": "Jessica warren",
+      "Check-In": "3 waterfoot road",
+      "Check-Out": "333-962-7516",
+      "email": "jessica.warren@email.com"
+    },
+    {
+      "id": 3,
+      "fullName": "Tony Frank",
+      "Check-In": "3 waterfoot road",
+      "Check-Out": "333-962-7516",
+      "email": "tony.frank@email.com"
+    },
+    {
+      "id": 4,
+      "fullName": "Jeremy Clark",
+      "Check-In": "3 waterfoot road",
+      "Check-Out": "333-962-7516",
+      "email": "jeremy.clark@email.com"
+    },
+    {
+      "id": 5,
+      "fullName": "Raymond Edwards",
+      "Check-In": "3 waterfoot road",
+      "Check-Out": "333-962-7516",
+      "email": "raymon.edwards@email.com"
+    }
+  ]
+  
