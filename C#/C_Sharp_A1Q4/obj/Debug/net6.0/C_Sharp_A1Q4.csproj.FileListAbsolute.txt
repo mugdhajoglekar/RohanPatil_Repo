@@ -1,0 +1,5 @@
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C_Sharp_A1Q4\obj\Debug\net6.0\C_Sharp_A1Q4.csproj.AssemblyReference.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C_Sharp_A1Q4\obj\Debug\net6.0\C_Sharp_A1Q4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C_Sharp_A1Q4\obj\Debug\net6.0\C_Sharp_A1Q4.AssemblyInfoInputs.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C_Sharp_A1Q4\obj\Debug\net6.0\C_Sharp_A1Q4.AssemblyInfo.cs
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C_Sharp_A1Q4\obj\Debug\net6.0\C_Sharp_A1Q4.csproj.CoreCompileInputs.cache
