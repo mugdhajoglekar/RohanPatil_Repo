@@ -1,0 +1,6 @@
+"It says what it means" is not helpful, especially for people new to this language. Nowhere in the error message does it explain WHY an instance member can't be declared in a static class. It simply says it cannot be done with no suggestions on how to solve the error. – 
+dsanchez
+ Jul 5, 2019 at 14:42
+Beside the first sentence "it says what it means" there are two solutions for the OPs problem in my answer. And why it is this way is not clear - see the comments below the accepted answer. – 
+tanascius
+ Jul 8, 2019 at 9:09
