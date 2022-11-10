@@ -1,0 +1,15 @@
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\obj\Debug\net6.0\C_SharpA2.csproj.AssemblyReference.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\obj\Debug\net6.0\C_SharpA2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\obj\Debug\net6.0\C_SharpA2.AssemblyInfoInputs.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\obj\Debug\net6.0\C_SharpA2.AssemblyInfo.cs
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\obj\Debug\net6.0\C_SharpA2.csproj.CoreCompileInputs.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\bin\Debug\net6.0\C_SharpA2.exe
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\bin\Debug\net6.0\C_SharpA2.deps.json
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\bin\Debug\net6.0\C_SharpA2.runtimeconfig.json
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\bin\Debug\net6.0\C_SharpA2.dll
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\bin\Debug\net6.0\C_SharpA2.pdb
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\obj\Debug\net6.0\C_SharpA2.dll
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\obj\Debug\net6.0\refint\C_SharpA2.dll
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\obj\Debug\net6.0\C_SharpA2.pdb
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\obj\Debug\net6.0\C_SharpA2.genruntimeconfig.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_assignment_2\C_SharpA2\obj\Debug\net6.0\ref\C_SharpA2.dll
