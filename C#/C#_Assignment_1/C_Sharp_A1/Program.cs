@@ -31,7 +31,7 @@ namespace CsharpString
             Console.WriteLine("Reverse the string through a function we get = " + StringReverse.ReverseString("Rohan"));
             Console.WriteLine("We can get substring by passing starting nad ending index in a function is = " + str1.Substring(0, 3));
             
-            static string Rev(string inp)
+            static string ReverseStr(string inp)
             {
                 char[] inpArr = inp.ToCharArray();
                 string reverse = String.Empty;
@@ -41,9 +41,9 @@ namespace CsharpString
                 }
                 return reverse;
             }
-            Console.WriteLine("Reverse the string using custom logic we get = " + Rev("Rohan"));
+            Console.WriteLine("Reverse the string using custom logic we get = " + ReverseStr("Rohan"));
             
-            static string Comp(string inp1, string inp2)
+            static string CompareString(string inp1, string inp2)
             {
                 char[] inpArr1 = inp1.ToCharArray();
                 char[] inpArr2 = inp2.ToCharArray();
@@ -72,8 +72,8 @@ namespace CsharpString
                 }
                 return outp;
             }
-            Console.WriteLine("Compare two strings using custom logic, Are given two strings 'string1' & 'string1' equal = " + Comp("string1", "string1"));
-            Console.WriteLine("Compare two strings using custom logic, Are given two strings 'string1' & 'string2' equal = " + Comp("string1", "string2"));
+            Console.WriteLine("Compare two strings using custom logic, Are given two strings 'string1' & 'string1' equal = " + CompareString("string1", "string1"));
+            Console.WriteLine("Compare two strings using custom logic, Are given two strings 'string1' & 'string2' equal = " + CompareString("string1", "string2"));
             
             static string SubStr(string inp, int start, int end)
             {
