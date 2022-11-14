@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "eH+T3iHiVq+Nhq7oTnH9OFz1vcD9l51rvk5LVHSADhQqRTZwxlvGpKLXz348yWWw19R2JX7Gd/ixBFr3CKJhnA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Rohan.P\\Desktop\\App [ Cores and Framework ]\\AppCore\\AppCore_3.1Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rohan.P\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.31\\microsoft.extensions.configuration.3.1.31.nupkg.sha512",
+    "C:\\Users\\Rohan.P\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.31\\microsoft.extensions.configuration.abstractions.3.1.31.nupkg.sha512",
+    "C:\\Users\\Rohan.P\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\3.1.31\\microsoft.extensions.configuration.fileextensions.3.1.31.nupkg.sha512",
+    "C:\\Users\\Rohan.P\\.nuget\\packages\\microsoft.extensions.configuration.json\\3.1.31\\microsoft.extensions.configuration.json.3.1.31.nupkg.sha512",
+    "C:\\Users\\Rohan.P\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.31\\microsoft.extensions.fileproviders.abstractions.3.1.31.nupkg.sha512",
+    "C:\\Users\\Rohan.P\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.31\\microsoft.extensions.fileproviders.physical.3.1.31.nupkg.sha512",
+    "C:\\Users\\Rohan.P\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.31\\microsoft.extensions.filesystemglobbing.3.1.31.nupkg.sha512",
+    "C:\\Users\\Rohan.P\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.31\\microsoft.extensions.primitives.3.1.31.nupkg.sha512",
+    "C:\\Users\\Rohan.P\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.30\\microsoft.netcore.app.host.win-x64.3.1.30.nupkg.sha512",
+    "C:\\Users\\Rohan.P\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Rohan.P\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Rohan.P\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
