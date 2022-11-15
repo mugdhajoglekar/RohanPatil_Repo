@@ -1,0 +1,10 @@
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que2\CalculatorNetFramework\bin\Debug\CalculatorNetFramework.exe.config
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que2\CalculatorNetFramework\bin\Debug\CalculatorNetFramework.exe
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que2\CalculatorNetFramework\bin\Debug\CalculatorNetFramework.pdb
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que2\CalculatorNetFramework\obj\Debug\CalculatorNetFramework.csproj.AssemblyReference.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que2\CalculatorNetFramework\obj\Debug\CalculatorNetFramework.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que2\CalculatorNetFramework\obj\Debug\CalculatorNetFramework.Properties.Resources.resources
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que2\CalculatorNetFramework\obj\Debug\CalculatorNetFramework.csproj.GenerateResource.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que2\CalculatorNetFramework\obj\Debug\CalculatorNetFramework.csproj.CoreCompileInputs.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que2\CalculatorNetFramework\obj\Debug\CalculatorNetFramework.exe
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que2\CalculatorNetFramework\obj\Debug\CalculatorNetFramework.pdb
