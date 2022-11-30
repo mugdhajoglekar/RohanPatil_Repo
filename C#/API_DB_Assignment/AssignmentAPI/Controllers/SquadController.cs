@@ -60,21 +60,18 @@ namespace AssignmentAPI.Controllers
         {
             _logger.LogInformation("Inside Post controller");
             return Ok(_squadRepository.AddPlayer(squad));
-            _logger.LogInformation("Player Added Successfully");
         }
         [HttpPut]
         public IActionResult Put(Squad squad, int id)
         {
             _logger.LogInformation("Inside Put controller");
             return Ok(_squadRepository.UpdatePlayerInfo(squad, id));
-            _logger.LogInformation("Player Updated Successfully");
         }
         [HttpDelete]
         public IActionResult Delete(int id)
         {
             _logger.LogInformation("Inside Delete controller");
             return Ok(_squadRepository.RemovePlayer(id));
-            _logger.LogInformation("Player Deleted Successfully");
         }
     }
 }

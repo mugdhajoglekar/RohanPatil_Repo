@@ -1,18 +1,20 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace AssignmentAPI
 {
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.HttpsPolicy;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Hosting;
+    using Microsoft.Extensions.Logging;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using AssignmentAPI.Context;
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -26,6 +28,10 @@ namespace AssignmentAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<DB_Context>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+                    n => n.MigrationsAssembly(typeof(DB_Context).Assembly.FullName)));
+            services.AddScoped<Interface_DB_Context>(provider => provider.GetService<DB_Context>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
