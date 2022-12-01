@@ -17,14 +17,18 @@
     using Microsoft.Extensions.Configuration;
     using System.Data.SqlClient;
 
+    [ApiController]
+    [Route("[controller]")]
     public class ManagerLoginController : ControllerBase
     {
         public static Manager manager = new Manager();
-        private readonly IConfiguration configuration;
+        private readonly IConfiguration _configuration;
         private readonly SquadRepository _squadRepository;
 
         public ManagerLoginController(IConfiguration configuration)
+            
         {
+            _configuration = configuration;
             _squadRepository = new SquadRepository(configuration);
         }
 
@@ -84,7 +88,7 @@
             };
 
             var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(
-                 configuration.GetSection("AppSettings:Token").Value));
+                 _configuration.GetSection("AppSettings:Token").Value));
 
             var cred = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 
@@ -98,11 +102,12 @@
             return jwt;
         }
 
-        [HttpGet, Authorize]
-        public IActionResult Get()
-        {
-            return Ok(_squadRepository.PlayerDetails());
-        }
+        //[Authorize]
+        //[HttpGet]
+        //public IActionResult Get()
+        //{
+        //    return Ok(_squadRepository.PlayerDetails());
+        //}
 
     }
 }

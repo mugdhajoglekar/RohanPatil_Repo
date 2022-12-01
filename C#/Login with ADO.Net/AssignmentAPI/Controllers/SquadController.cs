@@ -8,6 +8,7 @@ namespace AssignmentAPI.Controllers
     using System.Threading.Tasks;
     using System;
     using Microsoft.Extensions.Logging;
+    using Microsoft.AspNetCore.Authorization;
 
     [ApiController]
     [Route("[controller]")]
@@ -20,6 +21,8 @@ namespace AssignmentAPI.Controllers
         {
             _squadRepository = new SquadRepository(configuration);
         }
+
+        [Authorize]
         [HttpGet]
         public IActionResult Get()
         {

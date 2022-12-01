@@ -15,9 +15,7 @@
     public class SquadRepository
     {
         private readonly string _connectionString;
-
         public IConfiguration Configuration { get; }
-
         public SquadRepository(IConfiguration configuration)
         {
             Configuration = configuration;
