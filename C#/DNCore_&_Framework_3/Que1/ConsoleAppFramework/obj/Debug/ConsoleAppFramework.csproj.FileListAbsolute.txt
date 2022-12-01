@@ -1,0 +1,8 @@
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que1\ConsoleAppFramework\bin\Debug\ConsoleAppFramework.exe.config
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que1\ConsoleAppFramework\bin\Debug\ConsoleAppFramework.exe
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que1\ConsoleAppFramework\bin\Debug\ConsoleAppFramework.pdb
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que1\ConsoleAppFramework\obj\Debug\ConsoleAppFramework.csproj.AssemblyReference.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que1\ConsoleAppFramework\obj\Debug\ConsoleAppFramework.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que1\ConsoleAppFramework\obj\Debug\ConsoleAppFramework.csproj.CoreCompileInputs.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que1\ConsoleAppFramework\obj\Debug\ConsoleAppFramework.exe
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\DNCore_&_Framework_3\Que1\ConsoleAppFramework\obj\Debug\ConsoleAppFramework.pdb

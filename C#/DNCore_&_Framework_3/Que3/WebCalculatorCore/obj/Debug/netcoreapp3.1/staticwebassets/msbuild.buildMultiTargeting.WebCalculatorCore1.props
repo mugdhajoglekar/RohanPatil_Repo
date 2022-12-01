@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WebCalculatorCore1.props" />
+</Project>

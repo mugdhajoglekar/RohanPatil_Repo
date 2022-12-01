@@ -1,0 +1,54 @@
+2022-12-01 04:15:46.095 +05:30  INF  Program has started with logging
+2022-12-01 04:15:46.391 +05:30  INF  Now listening on: https://localhost:5001
+2022-12-01 04:15:46.394 +05:30  INF  Now listening on: http://localhost:5000
+2022-12-01 04:15:46.394 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-12-01 04:15:46.394 +05:30  INF  Hosting environment: Development
+2022-12-01 04:15:46.394 +05:30  INF  Content root path: C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\API_DB_Assignment\AssignmentAPI
+2022-12-01 04:15:47.247 +05:30  INF  Request starting HTTP/2 GET https://localhost:5001/squad  
+2022-12-01 04:15:47.290 +05:30  INF  Executing endpoint 'AssignmentAPI.Controllers.SquadController.Get (AssignmentAPI)'
+2022-12-01 04:15:47.317 +05:30  INF  Route matched with {action = "Get", controller = "Squad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller AssignmentAPI.Controllers.SquadController (AssignmentAPI).
+2022-12-01 04:15:47.320 +05:30  INF  Inside Get controller
+2022-12-01 04:15:47.339 +05:30  INF  Getting player details
+2022-12-01 04:15:47.574 +05:30  INF  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AssignmentAPI.Models.Squad, AssignmentAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-01 04:15:47.616 +05:30  INF  Executed action AssignmentAPI.Controllers.SquadController.Get (AssignmentAPI) in 293.0625ms
+2022-12-01 04:15:47.618 +05:30  INF  Executed endpoint 'AssignmentAPI.Controllers.SquadController.Get (AssignmentAPI)'
+2022-12-01 04:15:47.623 +05:30  INF  Request finished in 378.736ms 200 application/json; charset=utf-8
+2022-12-01 04:15:47.652 +05:30  INF  Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2022-12-01 04:15:47.653 +05:30  INF  Request finished in 0.9442ms 404 
+2022-12-01 04:27:34.257 +05:30  INF  Program has started with logging
+2022-12-01 04:27:34.627 +05:30  INF  Now listening on: https://localhost:5001
+2022-12-01 04:27:34.629 +05:30  INF  Now listening on: http://localhost:5000
+2022-12-01 04:27:34.629 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-12-01 04:27:34.629 +05:30  INF  Hosting environment: Development
+2022-12-01 04:27:34.629 +05:30  INF  Content root path: C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\API_DB_Assignment\AssignmentAPI
+2022-12-01 04:30:55.846 +05:30  INF  Program has started with logging
+2022-12-01 04:30:56.127 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-12-01 04:30:56.129 +05:30  INF  Hosting environment: Development
+2022-12-01 04:30:56.129 +05:30  INF  Content root path: C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\API_DB_Assignment\AssignmentAPI
+2022-12-01 04:30:56.145 +05:30  INF  Request starting HTTP/2.0 GET https://localhost:44369/squad  
+2022-12-01 04:30:56.181 +05:30  INF  Executing endpoint 'AssignmentAPI.Controllers.SquadController.Get (AssignmentAPI)'
+2022-12-01 04:30:56.217 +05:30  INF  Route matched with {action = "Get", controller = "Squad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller AssignmentAPI.Controllers.SquadController (AssignmentAPI).
+2022-12-01 04:30:56.219 +05:30  INF  Inside Get controller
+2022-12-01 04:30:56.229 +05:30  INF  Getting player details
+2022-12-01 04:30:56.372 +05:30  INF  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AssignmentAPI.Models.Squad, AssignmentAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-01 04:30:56.436 +05:30  INF  Executed action AssignmentAPI.Controllers.SquadController.Get (AssignmentAPI) in 213.858ms
+2022-12-01 04:30:56.438 +05:30  INF  Executed endpoint 'AssignmentAPI.Controllers.SquadController.Get (AssignmentAPI)'
+2022-12-01 04:30:56.443 +05:30  INF  Request finished in 300.5688ms 200 application/json; charset=utf-8
+2022-12-01 04:30:56.484 +05:30  INF  Request starting HTTP/2.0 GET https://localhost:44369/favicon.ico  
+2022-12-01 04:30:56.486 +05:30  INF  Request finished in 2.05ms 404 
+2022-12-01 04:31:09.708 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:44369/squad  
+2022-12-01 04:31:09.710 +05:30  INF  Executing endpoint 'AssignmentAPI.Controllers.SquadController.Get (AssignmentAPI)'
+2022-12-01 04:31:09.711 +05:30  INF  Route matched with {action = "Get", controller = "Squad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller AssignmentAPI.Controllers.SquadController (AssignmentAPI).
+2022-12-01 04:31:09.711 +05:30  INF  Inside Get controller
+2022-12-01 04:31:09.712 +05:30  INF  Getting player details
+2022-12-01 04:31:09.726 +05:30  INF  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AssignmentAPI.Models.Squad, AssignmentAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-01 04:31:09.728 +05:30  INF  Executed action AssignmentAPI.Controllers.SquadController.Get (AssignmentAPI) in 16.4673ms
+2022-12-01 04:31:09.728 +05:30  INF  Executed endpoint 'AssignmentAPI.Controllers.SquadController.Get (AssignmentAPI)'
+2022-12-01 04:31:09.728 +05:30  INF  Request finished in 22.606ms 200 application/json; charset=utf-8
+2022-12-01 04:31:29.641 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:44369/manager  0
+2022-12-01 04:31:29.642 +05:30  INF  Executing endpoint 'AssignmentAPI.Controllers.ManagerController.Post (AssignmentAPI)'
+2022-12-01 04:31:29.711 +05:30  INF  Route matched with {action = "Post", controller = "Manager"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(AssignmentAPI.Models.Manager) on controller AssignmentAPI.Controllers.ManagerController (AssignmentAPI).
+2022-12-01 04:31:30.029 +05:30  INF  Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-12-01 04:31:30.033 +05:30  INF  Executed action AssignmentAPI.Controllers.ManagerController.Post (AssignmentAPI) in 322.107ms
+2022-12-01 04:31:30.034 +05:30  INF  Executed endpoint 'AssignmentAPI.Controllers.ManagerController.Post (AssignmentAPI)'
+2022-12-01 04:31:30.036 +05:30  INF  Request finished in 435.5914ms 415 application/problem+json; charset=utf-8

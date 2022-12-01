@@ -1,0 +1,17 @@
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\obj\Debug\net6.0-windows\FormCalculator.csproj.AssemblyReference.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\obj\Debug\net6.0-windows\FormCalculator.Calc.resources
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\obj\Debug\net6.0-windows\FormCalculator.csproj.GenerateResource.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\obj\Debug\net6.0-windows\FormCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\obj\Debug\net6.0-windows\FormCalculator.AssemblyInfoInputs.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\obj\Debug\net6.0-windows\FormCalculator.AssemblyInfo.cs
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\obj\Debug\net6.0-windows\FormCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\bin\Debug\net6.0-windows\FormCalculator.exe
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\bin\Debug\net6.0-windows\FormCalculator.deps.json
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\bin\Debug\net6.0-windows\FormCalculator.runtimeconfig.json
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\bin\Debug\net6.0-windows\FormCalculator.dll
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\bin\Debug\net6.0-windows\FormCalculator.pdb
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\obj\Debug\net6.0-windows\FormCalculator.dll
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\obj\Debug\net6.0-windows\refint\FormCalculator.dll
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\obj\Debug\net6.0-windows\FormCalculator.pdb
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\obj\Debug\net6.0-windows\FormCalculator.genruntimeconfig.cache
+C:\Users\Rohan.P\Desktop\Rohan GitHub\RohanPatil_Repo\C#\C#_Calculator\FormCalculator\obj\Debug\net6.0-windows\ref\FormCalculator.dll
